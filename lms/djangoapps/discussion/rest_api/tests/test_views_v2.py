@@ -1,6 +1,11 @@
 # pylint: skip-file
 """
-Tests for Discussion API views
+Tests for the external REST API endpoints of the Discussion API (views_v2.py).
+
+This module focuses on integration tests for the Django REST Framework views that expose the Discussion API.
+It verifies the correct behavior of the API endpoints, including authentication, permissions, request/response formats,
+and integration with the underlying discussion service. These tests ensure that the endpoints correctly handle
+various user roles, input data, and edge cases, and that they return appropriate HTTP status codes and response bodies.
 """
 
 

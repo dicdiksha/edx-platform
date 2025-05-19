@@ -1,6 +1,9 @@
 # pylint: skip-file
 """
-Tests for Discussion API internal interface
+Tests for the internal interface of the Discussion API (rest_api/api.py).
+
+This module directly tests the internal API functions of the Discussion API, such as create_thread,
+create_comment, update_thread, update_comment, and related helpers, by invoking them with various data and request objects.
 """
 
 import itertools
@@ -123,7 +126,7 @@ def _discussion_disabled_course_for(user):
 
 def _assign_role_to_user(user, course_id, role):
     """
-    Unset the blackout period for course discussions.
+    Assign a discussion role to a user for a given course.
 
     Arguments:
             user: User to assign role to
@@ -315,9 +318,9 @@ class CreateCommentTest(
         super().setUp()
         httpretty.reset()
         httpretty.enable()
-        self.course = CourseFactory.create()
         self.addCleanup(httpretty.reset)
         self.addCleanup(httpretty.disable)
+        self.course = CourseFactory.create()
         self.user = UserFactory.create()
         self.register_get_user_response(self.user)
         self.request = RequestFactory().get("/test_path")

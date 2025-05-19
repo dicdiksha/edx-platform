@@ -68,14 +68,14 @@ class Comment(models.Model):
             response = forum_api.update_thread_flag(
                 thread_id=voteable.id,
                 action="flag",
-                user_id=user.id,
+                user_id=str(user.id),
                 course_id=str(course_key),
             )
         elif voteable.type == 'comment':
             response = forum_api.update_comment_flag(
                 comment_id=voteable.id,
                 action="flag",
-                user_id=user.id,
+                user_id=str(user.id),
                 course_id=str(course_key),
             )
         else:
@@ -88,7 +88,7 @@ class Comment(models.Model):
             response = forum_api.update_thread_flag(
                 thread_id=voteable.id,
                 action="unflag",
-                user_id=user.id,
+                user_id=str(user.id),
                 update_all=bool(removeAll),
                 course_id=str(course_key),
             )
@@ -96,7 +96,7 @@ class Comment(models.Model):
             response = forum_api.update_comment_flag(
                 comment_id=voteable.id,
                 action="unflag",
-                user_id=user.id,
+                user_id=str(user.id),
                 update_all=bool(removeAll),
                 course_id=str(course_key),
             )
