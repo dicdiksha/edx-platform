@@ -200,7 +200,7 @@ class Thread(models.Model):
 
     def flagAbuse(self, user, voteable, course_id=None):
         if voteable.type != 'thread':
-            raise utils.CommentClientRequestError("Can only flag/unflag threads or comments")
+            raise utils.CommentClientRequestError("Can only flag threads")
 
         course_key = utils.get_course_key(self.attributes.get("course_id") or course_id)
         response = forum_api.update_thread_flag(
@@ -213,7 +213,7 @@ class Thread(models.Model):
 
     def unFlagAbuse(self, user, voteable, removeAll, course_id=None):
         if voteable.type != 'thread':
-            raise utils.CommentClientRequestError("Can only flag/unflag for threads or comments")
+            raise utils.CommentClientRequestError("Can only unflag threads")
 
         course_key = utils.get_course_key(self.attributes.get("course_id") or course_id)
         response = forum_api.update_thread_flag(
