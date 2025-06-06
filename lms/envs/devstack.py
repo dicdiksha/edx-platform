@@ -425,7 +425,7 @@ MKTG_URLS = {
     'COURSES': '/course',
     'DONATE': '/donate',
     'ENTERPRISE': '/enterprise',
-    'FAQ': '/student-faq',
+    # 'FAQ': '/student-faq',
     'HONOR': '/edx-terms-service',
     'HOW_IT_WORKS': '/how-it-works',
     'MEDIA_KIT': '/media-kit',
@@ -440,6 +440,9 @@ MKTG_URLS = {
     'TOS_AND_HONOR': '/edx-terms-service',
     'WHAT_IS_VERIFIED_CERT': '/verified-certificate',
     'PROGRAM_SUBSCRIPTIONS': '/program-subscriptions',
+    'FAQ':'/faq',
+    'TEAM':'/team',
+    'COPYRIGHT':'/copyright'    
 }
 
 ENTERPRISE_MARKETING_FOOTER_QUERY_PARAMS = {}
