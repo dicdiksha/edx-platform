@@ -293,6 +293,9 @@ def _footer_navigation_links(language=settings.LANGUAGE_CODE):
         ("contact", (_build_support_form_url(), _("Contact"))),
         ("careers", (marketing_link("CAREERS"), _("Careers"))),
         ("donate", (marketing_link("DONATE"), _("Donate"))),
+        ("team", (marketing_link("TEAM"), _("Team"))),
+        ("faq", (marketing_link("FAQ"), _("FAQ"))),
+        ("copyright_policy", (marketing_link("COPYRIGHT"), _("Copyright Policy"))),
     ]
 
     if language == settings.LANGUAGE_CODE:
