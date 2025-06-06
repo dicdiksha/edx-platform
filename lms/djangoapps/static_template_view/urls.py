@@ -18,7 +18,9 @@ urlpatterns = [
     path('news', views.render, {'template': 'news.html'}, name="news"),
     path('press', views.render, {'template': 'press.html'}, name="press"),
     path('media-kit', views.render, {'template': 'media-kit.html'}, name="media-kit"),
-    path('copyright', views.render, {'template': 'copyright.html'}, name="copyright"),
+    # path('copyright', views.render, {'template': 'copyright.html'}, name="copyright"),
+    path('copyright', views.render, {'template': 'copyright_policy.html'}, name="copyright_policy"),
+    path('team', views.render, {'template': 'team.html'}, name="team"),
 
     # Press releases
     re_path(r'^press/([_a-zA-Z0-9-]+)$', views.render_press_release, name='press_release'),

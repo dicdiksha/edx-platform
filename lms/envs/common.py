@@ -3480,7 +3480,7 @@ MKTG_URL_OVERRIDES = {}
 MKTG_URL_LINK_MAP = {
     'ABOUT': 'about',
     'CONTACT': 'contact',
-    'FAQ': 'help',
+    # 'FAQ': 'help',
     'COURSES': 'courses',
     'ROOT': 'root',
     'TOS': 'tos',
@@ -3491,6 +3491,9 @@ MKTG_URL_LINK_MAP = {
     'BLOG': 'blog',
     'DONATE': 'donate',
     'SITEMAP.XML': 'sitemap_xml',
+    'FAQ':'faq',
+    'TEAM':'team',
+    'COPYRIGHT':'copyright' ,
 
     # Verified Certificates
     'WHAT_IS_VERIFIED_CERT': 'verified-certificate',
