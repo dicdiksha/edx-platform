@@ -424,7 +424,27 @@ MAINTENANCE_BANNER_TEXT: Sample banner message
 MEDIA_ROOT: /edx/var/edxapp/media/
 MEDIA_URL: /media/
 MKTG_URLS: {}
-MKTG_URL_LINK_MAP: {}
+MKTG_URL_LINK_MAP : {
+    ABOUT: 'about',
+    CONTACT: 'contact',
+    # 'FAQ': 'help',
+    COURSES: 'courses',
+    ROOT: 'root',
+    TOS: 'tos',
+    HONOR: 'honor',  # If your site does not have an honor code, simply delete this line.
+    TOS_AND_HONOR: 'edx-terms-service',
+    PRIVACY: 'privacy',
+    PRESS: 'press',
+    BLOG: 'blog',
+    DONATE: 'donate',
+    SITEMAP.XML: 'sitemap_xml',
+    FAQ:'faq',
+    TEAM:'team',
+    COPYRIGHT:'copyright' ,
+
+    # Verified Certificates
+    'WHAT_IS_VERIFIED_CERT': 'verified-certificate',
+}
 MOBILE_STORE_URLS: {}
 MODULESTORE:
     default:
