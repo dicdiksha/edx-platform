@@ -437,10 +437,10 @@ MKTG_URL_LINK_MAP : {
     PRESS: 'press',
     BLOG: 'blog',
     DONATE: 'donate',
+    FAQ: 'faq',
+    TEAM: 'team',
+    COPYRIGHT: 'copyright' ,
     SITEMAP.XML: 'sitemap_xml',
-    FAQ:'faq',
-    TEAM:'team',
-    COPYRIGHT:'copyright' ,
 
     # Verified Certificates
     'WHAT_IS_VERIFIED_CERT': 'verified-certificate',
