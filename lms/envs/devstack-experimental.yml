@@ -181,8 +181,9 @@ CODE_JAIL:
     user: sandbox
 COMMENTS_SERVICE_KEY: password
 COMMENTS_SERVICE_URL: http://localhost:18080
-COMPREHENSIVE_THEME_DIRS:
-- ''
+COMPREHENSIVE_THEME_DIRS: [
+        '/edx/app/edxapp/mythemes'
+    ]
 COMPREHENSIVE_THEME_LOCALE_PATHS: []
 CONTACT_EMAIL: info@example.com
 CONTACT_MAILING_ADDRESS: SET-ME-PLEASE
@@ -272,7 +273,7 @@ DEFAULT_JWT_ISSUER:
     ISSUER: http://edx.devstack.lms:18000/oauth2
     SECRET_KEY: lms-secret
 DEFAULT_MOBILE_AVAILABLE: false
-DEFAULT_SITE_THEME: ''
+DEFAULT_SITE_THEME: 'ctes_test'
 DEPRECATED_ADVANCED_COMPONENT_TYPES: []
 DJFS:
     directory_root: /edx/var/edxapp/django-pyfs/static/django-pyfs
